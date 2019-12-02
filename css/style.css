@@ -10,12 +10,7 @@
     padding: 0;
 }
 
-header {
-    width: 1280px;
-    box-sizing: border-box;
-}
-
-main {
+body{
     width: 1280px;
     box-sizing: border-box;
 }
@@ -34,6 +29,7 @@ h2 {
     line-height: 36px;
     font-weight: 400;
     color: #445161;
+    text-align: center;
 }
 
 h3 {
@@ -60,7 +56,7 @@ p {
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .box-1 {
@@ -110,6 +106,9 @@ p {
     padding: 50px 250px;
     box-sizing: border-box;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 footer{
     display: block;
@@ -142,9 +141,10 @@ color: #333333;
 
 .video {
     float: right;
-    padding-left: 8%;
+    margin-left: 8%;
     width: 430px;
     height: 245px;
+    outline: none;
 }
 
 .plus-list-left {
@@ -184,7 +184,7 @@ color: #333333;
 .screenshots {
     display: inline-block;
     width: 49%;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .screen-img {
@@ -204,6 +204,7 @@ color: #333333;
     float: left;
     margin-right: 40px;
     margin-bottom: 20px;
+    display: block;
 }
 
 .rew {
@@ -220,7 +221,7 @@ color: #333333;
     content: "";
     display: block;
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: -25px;
     border: 15px solid transparent;
     border-right: 15px solid #ebebeb;
@@ -353,13 +354,16 @@ button:active{
     text-align: center;
     display: block;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 /*...Форма обратной связи...*/
 
 #contact{
-    display: inline-block;
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
 }
 
 .txt{
@@ -375,6 +379,7 @@ font-family: "Arial MT";
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
+    outline: none;
 }
 .txtarea{
     display:block;
@@ -388,17 +393,15 @@ line-height: 24px;
    height:80px;
     border-radius: 5px;
     font-family: "Arial MT";
+    outline: none;
 }
 .txt:focus, .txtarea:focus {
    border-style:solid;
    border-color:#BABABA;
    color:#444;
 }
-.button-send{
-    text-align: center;
-}
-#send{
-    outline: none;
+.form-box7 input[type="submit"] {
+  outline: none;
     width: 180px;
     height: 40px;
     text-decoration: none;
@@ -412,10 +415,19 @@ line-height: 24px;
     border: none;
     border-radius: 5px;
 }
+
+.form-box7 input[type="submit"]:hover {
+  background-color: gray;
+  color: white;
+}
+
+.form-box7 input[type="submit"]:active {
+  background-color:  #ffffff;
+  color:  #445162;
+}
 /*конец формы*/
 
 .contact-info{
-    display: inline-block;
     width: 240px;
     margin-left: 20px;
 }
